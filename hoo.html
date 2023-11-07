@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>LANDING PAGE</title>
+        <style type="text/css">
+            *{
+                padding: 0;
+                margin:0;
+                box-sizing:border-box;
+                
+            }
+            header{
+                width:100%;
+               
+                background: url('tea.jpg');
+                background-size: cover;
+                height: 1000px;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                     }
+            nav{
+                width:100%;
+                height:100px;
+            
+                color:white;
+                display:flex;
+                justify-content: space-around;
+                align-items: center;
+            }
+            
+            .logo{
+                font-size :2em;
+                letter-spacing: 2px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+            .menu a {
+                text-decoration:none;
+                color:white;
+                padding:10px 20px;
+                font-size: 20px;
+                position:relative;
+               
+
+            }
+            .menu a:before
+            {
+                content:'';
+                position:absolute;
+                top:0;
+                left:0;
+                width:0%;
+                height :100%;
+                border-bottom:solid;
+                border-color: blue;
+               
+                transition:0.4s linear;
+
+            }
+            .menu a:hover:before{
+                width:90%;
+
+
+            }
+            .register a{
+                text-decoration:none;
+                color:rgb(247, 245, 249);
+                padding:10px 20px;
+                font-size: 20px;
+                
+                border-radius: 8px;
+                transition:0.4s;
+            }
+            .register a:hover{
+                background:transparent;
+                border:1px solid rgb(255, 222, 222);
+            }
+            .h-txt{
+                max-width:650px;
+                position:absolute;
+                top:50%;
+                left:50%;
+                transform:translate(-50%,-50%);
+                color:rgb(240, 238, 238);
+            }
+            .h-txt span{
+                letter-spacing: 10px;
+
+            }
+            .h-txt h1{
+                font-size: 3em;
+            }
+            .h-txt a{
+                text-decoration: none;
+                background: rgb(196, 42, 96);
+                color:rgb(244, 247, 250);
+                padding: 10px 20px;
+                letter-spacing: 5px;
+                transition:0.4s;
+            }
+            .h-txt a:hover{
+                background:transparent;
+                border:1px solid rgb(224, 224, 234);
+            }
+            .h-txt h2{
+                letter-spacing: 8px;
+            }
+
+            
+           
+           
+        </style>
+
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="logo">
+                    TEA BENCH<br>
+                </div>
+                <div class="menu">
+                    <i class="fa fa-home"></i><a href="#">HOME</a>
+                    <i class='fas fa-check-square'>
+                    </i><a href="#">BEST OFFERS</a>
+                    <i class='fas fa-search'></i><a href="#">EXPLORE OFFERS</a>
+                    <i class='fas fa-shipping-fast'></i><a href="#">DELIVARY</a>
+                    <i class="fa fa-address-book"></i><a href="#">CONTACT</a>
+                </div>
+                <div class="register">
+                    <i class="fa fa-registered"></i><a href="#">REGISTER</a>
+                </div>
+            </nav>
+            <section class="h-txt">
+                <marquee behavior="alternate"><h2>TEA LOVE FOOD LOVE</h2></marquee>
+                <span>Enjoy Your Mood!!</span>
+                <h1>TEA BENCH</h1>
+                <br>
+                <a href="#">Order Your Food!!!</a>
+            </section>
+        </header>
+        <footer>
+            <center><h2 style="font-family: 'Times New Roman', Times, serif;margin:2px;color:black;letter-spacing: 2px;">FOLLOW US ON</h2></center>
+      <div class="footercontainer">
+        <div class="socialicons">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-google-plus"></i></a>
+            <a href=""><i class="fa-brands fa-youtube"></i></a>
+        </div>
+        <div class="footerbottom">
+            <p>Copyright &copy;2023; Designed by <span class="designer">Shreya B</span></p>
+        </div>
+
+      </div>
+    </footer>
+    </body>
+</html>
